@@ -2,15 +2,9 @@
     font-family: "Futura Bk BT";
     src: url("../fonts/futura.ttf") format("truetype");
 }
-.futura{
-    font-family: "Futura Bk BT";
-
-}
-
 * {
     box-sizing:border-box
 }
-
 body {
     font-family: "Futura Bk BT";
     margin: 0;
@@ -22,7 +16,7 @@ main{
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    background-image: url("../imgs/bkg.png");
+    background-image: url("../imgs/bkg2x.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: fill;
@@ -38,7 +32,6 @@ main{
 .login-form{
     text-align: center;
     color: #FFFFFF;
-    margin: auto;
 }
 
 input[type=text], input[type=password] {
@@ -48,7 +41,7 @@ input[type=text], input[type=password] {
     font-size: 100%;
     padding: .5em .5em;
     margin-left: 1em;
-    margin-top: 1.5em;
+    margin-top: .5em;
     border: 1px solid #ccc;
     border-radius: 5px;
     width: 26em;
@@ -60,9 +53,8 @@ textarea:hover {
 label[for="email"], label[for="password"] {
     text-align: center;
     font-size: 1.5em;
-
 }
-button {
+.continue {
     font-weight: bold;
     font-size: 1.5em;
     float: center;
@@ -73,7 +65,7 @@ button {
     border: none;
     cursor: pointer;
 }
-button:hover {
+.continue:hover {
   background: #0575e6;
   background: linear-gradient(to right, #0575e6, #021b79)
 }
@@ -85,7 +77,6 @@ button:hover {
 .forgot:hover{
     color: #0575e6;
 }
-
 .circle {
     font-size: 1.5em;
     display: flex;
@@ -101,6 +92,9 @@ button:hover {
     background: #EFC060;
     align-items: center;
 }   
+hr{
+    padding: -5px;
+}
 
 
 @media (max-width: 600px) {
