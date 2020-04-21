@@ -1,0 +1,109 @@
+@font-face {
+    font-family: "Futura Bk BT";
+    src: url("../fonts/futura.ttf") format("truetype");
+}
+.futura{
+    font-family: "Futura Bk BT";
+
+}
+
+* {
+    box-sizing:border-box
+}
+
+body {
+    font-family: "Futura Bk BT";
+    margin: 0;
+}
+main{
+    max-width: 45%;
+    align-items: center;
+    margin-left: 29%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    background-image: url("../imgs/bkg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: fill;
+}
+.logo{
+    letter-spacing: 1em;
+    text-align: center;
+    font-size: 2em;
+    }
+.login{
+    font-size: 3em;
+}
+.login-form{
+    text-align: center;
+    color: #FFFFFF;
+    margin: auto;
+}
+
+input[type=text], input[type=password] {
+    display: flex;
+    flex-direction: column;
+    font-family: inherit;
+    font-size: 100%;
+    padding: .5em .5em;
+    margin-left: 1em;
+    margin-top: 1.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 26em;
+}
+input:hover,
+textarea:hover {
+    background-color: #FFD;
+}
+label[for="email"], label[for="password"] {
+    text-align: center;
+    font-size: 1.5em;
+
+}
+button {
+    font-weight: bold;
+    font-size: 1.5em;
+    float: center;
+    background-color: #7EACBC;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+  background: #0575e6;
+  background: linear-gradient(to right, #0575e6, #021b79)
+}
+.forgot{
+    font-size: 85%;
+    color: #FD9600;
+    text-align: right;
+}
+.forgot:hover{
+    color: #0575e6;
+}
+
+.circle {
+    font-size: 1.5em;
+    display: flex;
+    margin-left: 34%;
+    padding-left: 3.5%;
+    margin-bottom: 10%;
+    margin-top: 7%;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: solid 6px #FFFFFF;
+    background: #EFC060;
+    align-items: center;
+}   
+
+
+@media (max-width: 600px) {
+  .row {
+    flex-direction: column;
+  }
