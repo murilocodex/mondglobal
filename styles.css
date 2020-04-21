@@ -92,8 +92,17 @@ label[for="email"], label[for="password"] {
     background: #EFC060;
     align-items: center;
 }   
-hr{
-    padding: -5px;
+hr#loginu {
+    width: 30%;
+    color: #FD9600;
+    background-color: #FD9600;
+    height: 5px;
+}
+hr#mondu {
+    width: 12.5em;
+    color: #293441;
+    background-color: #293441;
+    height: 5px;
 }
 
 
