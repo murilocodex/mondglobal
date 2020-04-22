@@ -8,43 +8,62 @@
 body {
     font-family: "Futura Bk BT";
     margin: 0;
+
 }
-main{
-    max-width: 45%;
-    align-items: center;
-    margin-left: 29%;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    background-image: url("../imgs/bkg2x.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: fill;
+.container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center
 }
+.box {
+        width: 300px;
+        height: 300px;
+    }
+
 .logo{
+    align-content: center;
     letter-spacing: 1em;
     text-align: center;
     font-size: 2em;
     }
 .login{
     font-size: 3em;
-}
-.login-form{
     text-align: center;
+}
+
+.youwin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../imgs/bkg2x.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
     color: #FFFFFF;
 }
 
 input[type=text], input[type=password] {
     display: flex;
-    flex-direction: column;
     font-family: inherit;
     font-size: 100%;
     padding: .5em .5em;
-    margin-left: 1em;
     margin-top: .5em;
+    margin-bottom: .5em;
     border: 1px solid #ccc;
     border-radius: 5px;
-    width: 26em;
+    width: 35em;
+
 }
 input:hover,
 textarea:hover {
@@ -57,7 +76,7 @@ label[for="email"], label[for="password"] {
 .continue {
     font-weight: bold;
     font-size: 1.5em;
-    float: center;
+
     background-color: #7EACBC;
     color: white;
     padding: 14px 20px;
@@ -70,43 +89,48 @@ label[for="email"], label[for="password"] {
   background: linear-gradient(to right, #0575e6, #021b79)
 }
 .forgot{
+    padding-left: 75%;
     font-size: 85%;
     color: #FD9600;
-    text-align: right;
 }
 .forgot:hover{
     color: #0575e6;
 }
+
 .circle {
-    font-size: 1.5em;
+    font-size: 2em;
     display: flex;
-    margin-left: 34%;
-    padding-left: 3.5%;
-    margin-bottom: 10%;
-    margin-top: 7%;
-    text-align: center;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: solid 6px #FFFFFF;
-    background: #EFC060;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    margin-bottom: 7%;
+    margin-top: 5%;
+    padding-top: 1.5em;
+    text-align: center;
+    width: 7em;
+    height: 7em;
+    border-radius: 50%;
+    border: solid .3em #FFFFFF;
+    background: #EFC060;
 }   
 hr#loginu {
-    width: 30%;
+    width: 12em;
     color: #FD9600;
     background-color: #FD9600;
     height: 5px;
+    border: none;
 }
 hr#mondu {
     width: 12.5em;
     color: #293441;
     background-color: #293441;
     height: 5px;
+    border: none;
 }
 
 
 @media (max-width: 600px) {
-  .row {
-    flex-direction: column;
-  }
+
+input[type=text], input[type=password] {
+    width: 150%;
+}
